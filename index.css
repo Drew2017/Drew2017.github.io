@@ -1,0 +1,41 @@
+html {
+    background-color: skyblue;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width:80%;
+    object-fit: contain;
+}
+
+#welcome{
+    /*background-color: whitesmoke;*/
+    /*background-image: url('Cartoon_cloud.svg.png');
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+}
+
+#welcome p{
+    width:50%;
+    position: absolute;
+    top:30%;
+    left:30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image_container img{
+    display: block;
+    width: 50em;
+    margin-left: auto;
+    margin-right:auto;
+    }
