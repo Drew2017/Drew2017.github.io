@@ -1,5 +1,5 @@
 html {
-    background-color: skyblue;
+    background-color: #3f545d;
 }
 
 header h1{
@@ -10,32 +10,42 @@ header h1{
 img{
     width:80%;
     object-fit: contain;
+    border: 5px solid purple;
 }
 
 #welcome{
-    /*background-color: whitesmoke;*/
-    /*background-image: url('Cartoon_cloud.svg.png');
-    background-size:auto;
-    background-position: center;
-    background-repeat: no-repeat;*/
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width:fit-content;
+    max-width: 100%;
+    margin:0 auto;
+    border: 5px solid red;
 }
 
 #welcome p{
-    width:50%;
     position: absolute;
-    top:30%;
-    left:30%;
-    margin-left: auto;
-    margin-right: auto;
+    top: 350px;
+    left: 175px;
+    width: 30%;
+    font-weight: bold;
+    
 }
 
-.image_container img{
-    display: block;
-    width: 50em;
-    margin-left: auto;
-    margin-right:auto;
+#cloud{
+    border: 5px solid blue;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 300px;
     }
+
+#kc-135{
+    scale: 30%;
+    transform: rotate(45deg);
+}
+
+#f-16{
+    scale: 30%;
+    transform: rotate(-45deg);
+}
+
+#my_jet{
+flex: initial;
+}
