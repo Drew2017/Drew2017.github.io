@@ -2,56 +2,79 @@ html {
     background-color: #3f545d;
 }
 
+@font-face {
+    font-family: 'Bungee_hairline';
+    src: url(./BungeeHairline-Regular.ttf);
+}
+
 header h1{
     display: flex;
     justify-content: center;
 }
 
 #welcome{
-    max-width: 100%;
+    position: relative;
     margin:0 auto;
+    /* border: 5px solid red; */
 }
 
 #welcome p{
     display: block;
-    position: absolute;
-    padding: 20% 20%;
-    top: 5%;
-    left: 15%;
+    position: relative;
+    padding:25%;
+    padding-top: 15%;
+    margin: 0 auto;
     width: 30%;
     font-weight: bold; 
-    font-size:20px; 
-    background-image: url('Cartoon_cloud.svg.png');
+    font-size:16px; 
+    font-family: "bungee_hairline";
+    background-image: url('Cloud_inside.png');
     background-size: contain;
     background-position:center;
     background-repeat: no-repeat;
     background-clip:padding-box;
+    background-position-y: 0%;
+    /* border: 5px solid blue; */
+}
+
+#Cloud_outline{
+    position: absolute;
+    top:0%;
+    left:10%;
+    z-index: 1;
 }
 
 img{
     object-fit: contain;
+    z-index: 2;
 }
 
-
-#cloud{
-    width: 700px;
-    height: 700px;
-    position: absolute;
-    left: 300px;
-    }
+.dotted:hover{
+    border:5px solid purple;
+}
 
 #kc-135{
     scale: 50%;
     transform: rotate(45deg);
-    position: relative;
-    left: 30%;
-    top: -30px;
+    position: absolute;
+    right: -3%;
+    top: 10%;
+    /* border:5px solid purple; */
 }
 
+
 #f-16{
+    position: absolute;
+    top:25%;
     scale: 50%;
     transform: rotate(-45deg);
+    /* border:5px solid purple; */
+
 }
 
 #my_jet{
+    position: absolute;
+    left:30%;
+    bottom: 5%;
+    z-index: -1;
 }
