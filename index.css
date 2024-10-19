@@ -16,44 +16,29 @@ header h1{
     /* border: 5px solid yellow; */
 }
 
-#welcome{
+.image_container{
     position: relative;
     margin:0 auto;
-    /* border: 5px solid red; */
+    scale: 100%;
+    border: 5px solid red;
     
 }
 
-/* .separator{
-    position: relative;
-    border: 5px solid salmon;
-    height: 100%;
-    width: 40%;
-    margin:0 auto;
-    padding:25%;
-} */
-
-#welcome p{
+p{
     display: block;
     position: relative;
     padding: 25%;
-    padding-top: 15%;
+    padding-top: 30%;
     margin: 0 auto;
     width: 30%;
     font-weight: bold; 
-    font-size:1rem; 
+    font-size:1vw; 
     font-family: "bungee_hairline";
-    /* background-image: url('Cloud_inside.png');
-    background-size: contain;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-clip:padding-box;
-    background-position-y: 0%; */
-    /* border: 5px solid blue; */
 }
 
 .cloud{
     position: absolute;
-    top:16%;
+    top:0%;
     left:0%;
     width: 100%;
     height: 100%;
@@ -62,6 +47,8 @@ header h1{
 
 #Cloud_outline{
     z-index: 1;
+    position: absolute;
+    top:0%;    
 }
 
 img{
@@ -74,21 +61,20 @@ img{
 }
 
 #kc-135{
-    scale: 50%;
-    transform: rotate(90deg);
+    transform: scale(50%) translate(-50%, -50%) rotate(0deg);
     position: absolute;
-    left: 10%;
-    top: 55%;
-    /* border:5px solid purple; */
+    left: 8%;
+    top: 35%;
+    /* border:5px solid red; */
+    
 }
 
 
 #f-16{
     position: absolute;
     top:50%;
-    right:0%;
-    scale: 50%;
-    transform: rotate(-45deg);
+    right:-5%;
+    transform:scale(50%) translate(-50%, -50%) rotate(-45deg);
     /* border:5px solid purple; */
 
 }
