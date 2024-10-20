@@ -1,3 +1,8 @@
+:root{
+--widthVar:1;
+}
+
+
 html {
     background-color: #3f545d;
     /* border: 5px solid black; */
@@ -19,8 +24,9 @@ header h1{
 .image_container{
     position: relative;
     margin:0 auto;
+    width:calc(var(--widthVar)*100%);
     scale: 100%;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     
 }
 
@@ -28,11 +34,11 @@ p{
     display: block;
     position: relative;
     padding: 25%;
-    padding-top: 30%;
+    padding-top: 25%;
     margin: 0 auto;
     width: 30%;
     font-weight: bold; 
-    font-size:1vw; 
+    font-size:calc(1vw*var(--widthVar)); 
     font-family: "bungee_hairline";
 }
 
@@ -41,8 +47,8 @@ p{
     top:0%;
     left:0%;
     width: 100%;
-    height: 100%;
     z-index: -1;
+    /* border: 5px solid yellow; */
 }
 
 #Cloud_outline{
@@ -52,7 +58,7 @@ p{
 }
 
 img{
-    object-fit: contain;
+    object-fit: fill;
     z-index: 2;
     }
 
@@ -61,10 +67,11 @@ img{
 }
 
 #kc-135{
-    transform: scale(50%) translate(-50%, -50%) rotate(0deg);
+    transform:translate(calc(50%/var(--widthVar)),calc(-50%/var(--widthVar))) rotate(0deg);
+    scale:calc(50%*var(--widthVar));
     position: absolute;
-    left: 8%;
-    top: 35%;
+    right: calc(var(--widthVar)*70%);
+    top: calc(var(--widthVar)*35%);
     /* border:5px solid red; */
     
 }
@@ -72,17 +79,20 @@ img{
 
 #f-16{
     position: absolute;
-    top:50%;
-    right:-5%;
-    transform:scale(50%) translate(-50%, -50%) rotate(-45deg);
+    transform:translate(calc(50%/var(--widthVar)),calc(-50%/var(--widthVar))) rotate(-45deg);
+    scale:calc(50%*var(--widthVar));
+    top:calc(var(--widthVar)*35%);
+    right:calc(var(--widthVar)*15%);
     /* border:5px solid purple; */
 
 }
 
 #my_jet{
     position: absolute;
-    left:30%;
-    bottom: -50%;
+    left:50%;
+    bottom:10%;
     z-index: -1;
+    transform:translate(calc(-50%/var(--widthVar)),calc(50%/var(--widthVar)));
+    scale:var(--widthVar);
     /* border: 5px solid white; */
 }
